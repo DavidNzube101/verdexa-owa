@@ -1,5 +1,7 @@
 services:
   - type: web
-    name: verdexa
+    name: verdexa-owa
     runtime: docker
-    plan: free
+    dockerfilePath: ./Dockerfile
+    region: oregon
+    startCommand: "./app"

@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-    cmd := exec.Command("python3", "server.py")
+    cmd := exec.Command("python3", "app.py")
     cmd.Stdout = os.Stdout
     cmd.Stderr = os.Stderr
 
