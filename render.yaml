@@ -1,7 +1,5 @@
 services:
   - type: web
     name: go
-    runtime: go
+    runtime: docker
     plan: free
-    buildCommand: go build -tags netgo -ldflags '-s -w' -o app
-    startCommand: ./app
